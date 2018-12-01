@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #009999;
+    padding: 20px;
+    text-align: center;
+}
+.image{
+  position: absolute;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: ##003366;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  background-color: ##006666;
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #009999;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>YOGYAKARTA</h1>
+  <p>Kota Istimewa</p>
+  <img src="th.jpg" width="125" height="100">
+  </div>
+</div>
+
+<div class="topnav">
+ <a href="#">Home</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+  <ol style="list-style-type: none">
+    <li><a href="">Menulink</a></li>
+    <br>
+    <li><a href="">Menulink</a></li>
+    <br>
+    <li><a href="">Menulink</a></li>
+    <br>
+    <li><a href="">Menulink</a></li>
+    <br>
+    <li><a href="">Menulink</a></li>
+    <br>
+    <br><br><br><br>
+
+  </ol>
+  </div>
+  <div class="column middle">
+    <h2>About Yogyakarta</h2>
+    <p>Yogyakarta (DIY) adalah wilayah tertua kedua di Indonesia setelah Jawa Timur, yang dibentuk oleh pemerintah negara bagian Indonesia. Daerah setingkat provinsi ini juga memiliki status istimewa atau otonomi khusus. Status ini merupakan sebuah warisan dari zaman sebelum kemerdekaan. Kesultanan Yogyakarta dan juga Kadipaten Paku Alaman, sebagai cikal bakal atau asal usul DIY, memiliki status sebagai “Kerajaan vasal/Negara bagian/Dependent state” dalam pemerintahan penjajahan mulai dari VOC , Hindia Perancis (Republik Bataav Belanda-Perancis), India Timur/EIC (Kerajaan Inggris), Hindia Belanda (Kerajaan Nederland), dan terakhir Tentara Angkatan Darat XVI Jepang (Kekaisaran Jepang). Oleh Belanda status tersebut disebut sebagai Zelfbestuurende Lanschappen dan oleh Jepang disebut dengan Koti/Kooti. Status ini membawa konsekuensi hukum dan politik berupa kewenangan untuk mengatur dan mengurus wilayah [negaranya] sendiri di bawah pengawasan pemerintah penjajahan tentunya. Status ini pula yang kemudian juga diakui dan diberi payung hukum oleh Bapak Pendiri Bangsa Indonesia Soekarno yang duduk dalam BPUPKI dan PPKI sebagai sebuah daerah bukan lagi sebagai sebuah negara.</p>
+  </div>
+  <div class="column side">
+    <h2>image yogyakarta</h2>
+     <img src="dd.jpg" width="110" height="100">
+     <img src="cc.jpg" width="110" height="100">
+     <img src="oo.jpg" width="110" height="100">
+     <img src="yy.jpg" width="110" height="100">
+    <br><br><br><br><br><br>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+  
+</body>
+</html>
